@@ -1,5 +1,7 @@
 # Meteocat - Predicció per municipi
 
+**Avís important:** aquest add-on **encara no és funcional** i es troba **en proves**. La informació següent serveix per preparar la configuració quan estigui disponible.
+
 Aquest add-on consulta la predicció del temps de Meteocat per al municipi que triïs i publica sensors a Home Assistant mitjançant MQTT Discovery.
 
 ## Funcionalitats
@@ -24,6 +26,23 @@ Aquest add-on consulta la predicció del temps de Meteocat per al municipi que t
 
 Un cop desat, l'add-on crearà automàticament les entitats.
 
+## Instal·lació (pas a pas)
+
+1. Afegeix el repositori a Home Assistant amb el botó del README del repositori.
+2. Entra a **Supervisor → Add-ons** i selecciona **Meteocat - Predicció per municipi**.
+3. Prem **Instal·la** i espera que finalitzi.
+
+## Configuració detallada (pas a pas)
+
+1. Obre la pestanya **Configuració** de l'add-on.
+2. Introdueix la **Clau API de Meteocat**.
+3. Introdueix el **Codi del municipi** (ID Meteocat).
+4. Si vols, afegeix el **Nom del municipi** per veure'l a les entitats.
+5. Configura el **Servidor MQTT** i el **Port MQTT**.
+6. Si el teu broker requereix credencials, omple **Usuari** i **Contrasenya**.
+7. Defineix l'**Interval d'actualització** (mínim 5 minuts).
+8. Desa els canvis i inicia l'add-on.
+
 ## Sensors creats
 
 - Temperatura màxima
@@ -39,4 +58,3 @@ Un cop desat, l'add-on crearà automàticament les entitats.
 
 - Si canvies el codi del municipi, es crearan entitats noves amb el nou identificador.
 - Pots veure els sensors a **Ajustos → Dispositius i serveis → MQTT**.
-
