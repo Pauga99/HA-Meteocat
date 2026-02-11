@@ -45,7 +45,7 @@ Per solucionar-ho:
 
 1. Fes **fork** d'aquest projecte al teu compte de GitHub.
 2. Verifica que el repositori del fork és **públic**.
-3. Substitueix `EL_TEU_USUARI` del botó per el teu usuari real de GitHub.
+3. Substitueix `Pauga99` del botó per el teu usuari real de GitHub.
 4. Torna a afegir el repositori des de Home Assistant amb la URL pública final, per exemple:
    `https://github.com/nom_usuari/HA-Meteocat`
 
