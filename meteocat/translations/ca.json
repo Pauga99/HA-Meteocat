@@ -1,0 +1,15 @@
+{
+  "name": "Meteocat - Predicció per municipi",
+  "description": "Integra la predicció del temps de Meteocat i crea sensors via MQTT.",
+  "options": {
+    "api_key": "Clau API de Meteocat",
+    "codi_municipi": "Codi del municipi (ID Meteocat)",
+    "nom_municipi": "Nom del municipi (opcional, per mostrar-lo a les entitats)",
+    "mqtt_host": "Servidor MQTT",
+    "mqtt_port": "Port MQTT",
+    "mqtt_usuari": "Usuari MQTT (opcional)",
+    "mqtt_contrasenya": "Contrasenya MQTT (opcional)",
+    "interval_minuts": "Interval d'actualització (minuts)",
+    "https": "Força HTTPS a l'API"
+  }
+}
