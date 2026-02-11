@@ -40,6 +40,7 @@
     "interval_minuts": "int(5,720)",
     "https": "bool"
   },
+  "image": "local/meteocat-{arch}",
   "environment": {
     "LOG_LEVEL": "info"
   }
