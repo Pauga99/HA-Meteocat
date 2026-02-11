@@ -4,7 +4,7 @@
 
 Add-on per integrar la predicció del temps de Meteocat (Servei Meteorològic de Catalunya) a Home Assistant mitjançant sensors MQTT.
 
-[![Obre Home Assistant i afegeix el repositori d'add-ons](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https://github.com/Pauga99/HA-Meteocat)
+[![Obre Home Assistant i afegeix el repositori d'add-ons](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https://github.com/EL_TEU_USUARI/HA-Meteocat)
 
 ## Add-ons disponibles
 
@@ -54,7 +54,7 @@ Si en instal·lar l'add-on veus errors com:
 
 `pull access denied for local/meteocat-amd64` o `Failed to fetch manifest for docker.io/local/...`
 
-vol dir que tenies una versió antiga de l'add-on que intentava usar la imatge `local/meteocat-*`. Amb aquesta versió ja s'utilitza `ghcr.io/pauga99/meteocat-{arch}`.
+vol dir que el Supervisor està intentant descarregar una imatge que no existeix en lloc de construir-la localment. Amb aquesta versió del repositori això queda corregit perquè l'add-on es construeixi des del `Dockerfile`.
 
 Passos recomanats després d'actualitzar el repositori:
 

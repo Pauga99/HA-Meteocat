@@ -73,7 +73,7 @@ Si en instal·lar l'add-on apareix:
 
 `pull access denied for local/meteocat-amd64` (o similar)
 
-era degut a una configuració antiga que apuntava a `local/meteocat-*`. La configuració actual utilitza `ghcr.io/pauga99/meteocat-{arch}`.
+era degut a una configuració d'imatge remota inexistent. La configuració actual ja força la construcció local de la imatge a partir del `Dockerfile` de l'add-on.
 
 Després d'actualitzar el repositori:
 
