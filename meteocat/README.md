@@ -58,3 +58,12 @@ Un cop desat, l'add-on crearà automàticament les entitats.
 
 - Si canvies el codi del municipi, es crearan entitats noves amb el nou identificador.
 - Pots veure els sensors a **Ajustos → Dispositius i serveis → MQTT**.
+
+
+## Resolució d'errors habituals
+
+Si Home Assistant mostra `fatal: could not read Username for 'https://github.com'`, la URL del repositori és privada o incorrecta.
+
+- Publica el repositori al teu compte de GitHub.
+- Fes-lo públic.
+- Utilitza l'URL pública final del teu fork en afegir el repositori (exemple: `https://github.com/nom_usuari/HA-Meteocat`).

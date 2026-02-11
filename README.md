@@ -4,7 +4,7 @@
 
 Add-on per integrar la predicció del temps de Meteocat (Servei Meteorològic de Catalunya) a Home Assistant mitjançant sensors MQTT.
 
-[![Obre Home Assistant i afegeix el repositori d'add-ons](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https://github.com/ha-meteocat/HA-Meteocat)
+[![Obre Home Assistant i afegeix el repositori d'add-ons](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https://github.com/EL_TEU_USUARI/HA-Meteocat)
 
 ## Add-ons disponibles
 
@@ -32,3 +32,19 @@ Add-on per integrar la predicció del temps de Meteocat (Servei Meteorològic de
 
 - Les entitats es creen automàticament via MQTT Discovery.
 - Pots veure-les a **Ajustos → Dispositius i serveis → MQTT**.
+
+## Resolució d'errors habituals
+
+Si en afegir el repositori veus aquest error:
+
+`fatal: could not read Username for 'https://github.com'`
+
+vol dir que la URL configurada apunta a un repositori privat o incorrecte.
+
+Per solucionar-ho:
+
+1. Fes **fork** d'aquest projecte al teu compte de GitHub.
+2. Verifica que el repositori del fork és **públic**.
+3. Substitueix `EL_TEU_USUARI` del botó per el teu usuari real de GitHub.
+4. Torna a afegir el repositori des de Home Assistant amb la URL pública final, per exemple:
+   `https://github.com/nom_usuari/HA-Meteocat`
