@@ -67,3 +67,16 @@ Si Home Assistant mostra `fatal: could not read Username for 'https://github.com
 - Publica el repositori al teu compte de GitHub.
 - Fes-lo públic.
 - Utilitza l'URL pública final del teu fork en afegir el repositori (exemple: `https://github.com/nom_usuari/HA-Meteocat`).
+
+
+Si en instal·lar l'add-on apareix:
+
+`pull access denied for local/meteocat-amd64` (o similar)
+
+era degut a una configuració d'imatge remota inexistent. La configuració actual ja força la construcció local de la imatge a partir del `Dockerfile` de l'add-on.
+
+Després d'actualitzar el repositori:
+
+1. Elimina l'add-on antic (si estava a mig instal·lar).
+2. Elimina i torna a afegir aquest repositori d'add-ons.
+3. Recarrega la botiga i instal·la de nou l'add-on.

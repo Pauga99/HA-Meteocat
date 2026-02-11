@@ -48,3 +48,17 @@ Per solucionar-ho:
 3. Substitueix `EL_TEU_USUARI` del botó per el teu usuari real de GitHub.
 4. Torna a afegir el repositori des de Home Assistant amb la URL pública final, per exemple:
    `https://github.com/nom_usuari/HA-Meteocat`
+
+
+Si en instal·lar l'add-on veus errors com:
+
+`pull access denied for local/meteocat-amd64` o `Failed to fetch manifest for docker.io/local/...`
+
+vol dir que el Supervisor està intentant descarregar una imatge que no existeix en lloc de construir-la localment. Amb aquesta versió del repositori això queda corregit perquè l'add-on es construeixi des del `Dockerfile`.
+
+Passos recomanats després d'actualitzar el repositori:
+
+1. A Home Assistant, elimina l'add-on instal·lat (si existeix).
+2. A **Ajustos → Add-ons → Repositoris**, elimina i torna a afegir aquest repositori.
+3. Recarrega la botiga d'add-ons.
+4. Torna a instal·lar **Meteocat - Predicció per municipi**.
